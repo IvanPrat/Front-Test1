@@ -1,0 +1,12 @@
+.item-description {
+  margin-left: $gutter;
+  margin-bottom: $gutter;
+
+  @media screen and (min-width: $breakpoint-xs) {
+    margin-bottom: $gutter-double;
+  }
+
+  h2 {
+    font-weight: 700;
+  }
+}

@@ -1,0 +1,30 @@
+// Variables
+// -------------------------
+
+// Colors
+$color-black: #000;
+$color-white: #fff;
+
+$color-softgrey: #DDDDDD;
+$color-grey: #999999;
+$color-hardgrey: #666666;
+
+$color-blue: #000066;
+
+// Default attributes
+$text-shadow-color: rgba(0, 0, 0, 0.3);
+
+$border-radius: 6px;
+
+$buttons-opacity: .6;
+$buttons-transition-hover: all 0.5s ease-in;
+
+// Gutter(s)
+$gutter: 1em;
+$gutter-half: $gutter / 2;
+$gutter-double: $gutter * 2;
+
+// Breakpoints
+$breakpoint-xs: 480px;
+$breakpoint-sm: 768px;
+$breakpoint-md: 960px;

@@ -1,0 +1,17 @@
+// Footer Layout
+// -------------------------
+footer {
+  border-top: 1px solid $color-black;
+
+  background-color: $color-hardgrey;
+  bottom: 0;
+  color: $color-white;
+  padding: $gutter;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+
+  p {
+    margin: 0;
+  }
+}

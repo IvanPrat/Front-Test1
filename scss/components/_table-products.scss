@@ -1,0 +1,44 @@
+$cells-width: 12%;
+
+.table-products {
+  @media screen and (min-width: $breakpoint-xs) {
+    padding-top: $gutter-double;
+  }
+
+  .table-head {
+    .empty-cell {
+      border-bottom: 0;
+    }
+  }
+
+  .table-cell {
+    text-transform: capitalize;
+
+    &:not(:first-child) {
+      width: $cells-width;
+      text-align: center;
+    }
+
+    &:last-child {
+      background-color: $color-white;
+      text-align: left;
+    }
+  }
+
+  .input-quantity {
+    display: inline-block;
+    vertical-align: bottom; // Due the default browser's behaviour with inline-block + centered text
+  }
+
+  .icon {
+    @include transition($buttons-transition-hover);
+
+    text-decoration: none;
+    color: $color-blue;
+    font-size: 1.5em;
+
+    &:hover {
+      @include opacity($buttons-opacity);
+    }
+  }
+}

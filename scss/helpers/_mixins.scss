@@ -1,0 +1,45 @@
+// Clearfix Mixin
+@mixin clearfix() {
+  &::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+}
+
+// Border Radius Mixin
+@mixin border-radius($radius...) {
+  -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+      border-radius: $radius;
+}
+
+// Box Shadow Mixin
+@mixin box-shadow($shadow...) {
+  -webkit-box-shadow: $shadow;
+    -moz-box-shadow: $shadow;
+      box-shadow: $shadow;
+}
+
+// Text Shadow Mixin
+@mixin text-shadow($shadow...) {
+  -webkit-text-shadow: $shadow;
+    -moz-text-shadow: $shadow;
+      text-shadow: $shadow;
+}
+
+// Transition Mixin
+@mixin transition($args) {
+  -webkit-transition: $args;
+    -moz-transition: $args;
+      -ms-transition: $args;
+        -o-transition: $args;
+          transition: $args;
+}
+
+// Opacity Mixin
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8
+}

@@ -1,0 +1,44 @@
+// Generic Styles - Main
+// -------------------------
+
+body {
+  font-size: 16px;
+  font-family: 'Droid Serif', serif;
+
+  // It takes so much time to make the whole page responsive, so I simply set a min width...
+  min-width: $breakpoint-sm;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: 'Droid Serif', serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: $gutter-half;
+  line-height: 1.1;
+  @include text-shadow(2px 2px 2px $text-shadow-color);
+}
+
+h2 {
+  font-size: 2em;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: $gutter-half;
+  line-height: $gutter;
+}

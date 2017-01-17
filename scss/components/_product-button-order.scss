@@ -1,0 +1,14 @@
+.product-button-order {
+  width: 100%;
+  display: inline-block;
+
+  @media screen and (min-width: $breakpoint-xs) {
+    padding-top: $gutter;
+  }
+
+  padding-right: $cells-width;
+
+  .btn {
+    float: right;
+  }
+}

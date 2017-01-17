@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Company</title>
+
+    <meta charset="UTF-8">
+
+    <!-- Main Styles -->
+    <link href="dist/css/styles.min.css" rel="stylesheet" type="text/css"/>
+
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans|Droid+Serif:400,700" rel="stylesheet">
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="logo">
+          <img src="img/logo.svg" alt="Company Logo"/>
+        </div>
+      </div>
+    </header>
+
+
+    <main>
+      <div class="container">
+
+        <div class="item-description">
+          <h2>Your Basket</h2>
+          <p>Items you have added to your basket are shown below.</p>
+          <p>Adjust the quantities or remove items before continuing your purchase.</p>
+        </div>
+
+        <div class="table table-products">
+          <div class="table-head">
+            <div class="table-row">
+              <div class="table-cell">
+                Product
+              </div>
+              <div class="table-cell">
+                Price
+              </div>
+              <div class="table-cell">
+                Qty
+              </div>
+              <div class="table-cell">
+                Cost
+              </div>
+              <div class="table-cell empty-cell"></div>
+            </div>
+          </div>
+
+          <div class="table-body js-table-products"></div>
+
+          <div class="table-footer">
+            <div class="table-row color-grey">
+              <div class="table-cell">
+                Subtotal
+              </div>
+              <div class="table-cell"></div>
+              <div class="table-cell"></div>
+              <div class="table-cell">
+                <span class="currency">&pound;</span><span id="subtotal"></span>
+              </div>
+              <div class="table-cell"></div>
+            </div>
+
+            <div class="table-row color-grey">
+              <div class="table-cell">
+                Vat @ 20%
+              </div>
+              <div class="table-cell"></div>
+              <div class="table-cell"></div>
+              <div class="table-cell">
+                <span class="currency">&pound;</span><span id="vat"></span>
+              </div>
+              <div class="table-cell"></div>
+            </div>
+
+            <div class="table-row empty-row"></div>
+
+            <div class="table-row font-strong">
+              <div class="table-cell">
+                Total cost
+              </div>
+              <div class="table-cell"></div>
+              <div class="table-cell"></div>
+              <div class="table-cell">
+                <span class="currency">&pound;</span><span id="total"></span>
+              </div>
+              <div class="table-cell"></div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="product-button-order">
+          <button class="btn btn-big" id="buy-now">Buy Now &raquo;</button>
+        </div>
+
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; Company - Enterprise Web Excellence</p>
+    </footer>
+
+    <script src="dist/js/jquery.min.js"></script>
+    <script src="dist/js/myBasket.min.js"></script>
+
+    <script>
+      var basket = new MyBasket(11, 20);
+
+      // Note from the author:
+      // Regarding to this: Also ensure that the page can be viewed and used without the need for JavaScript to be enabled.
+
+      // Please, note this is will only put all the contents inside the page.
+      // Having said that, you can also choose to put "directly" from the server the same values listed
+      // below into the array, and show it manually from the server.
+
+      var items = {
+        '1' : {
+          'name': 'Cotton T-Shirt, medium',
+          'price': 1.99,
+          'quantity': 1
+        },
+        '2' : {
+          'name': 'Baseball cap, one size',
+          'price': 2.99,
+          'quantity': 2
+        },
+        '3' : {
+          'name': 'Swim shorts, medium ',
+          'price': 1.99,
+          'quantity': 1
+        }
+      };
+    </script>
+
+    <script src="dist/js/main.min.js"></script>
+  </body>
+</html>

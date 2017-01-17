@@ -1,0 +1,7 @@
+{
+  "name": "Company-Test",
+  "dependencies": {
+    "normalize.css": "*",
+    "jquery": "1.9.1"
+  }
+}

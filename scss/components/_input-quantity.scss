@@ -1,0 +1,43 @@
+$input-border-size: 3px;
+
+$input-size-height: 25px;
+$input-size-height-half: $input-size-height / 2;
+
+$input-size-width: 35px;
+
+.input-quantity {
+  > * {
+    display: inline-block;
+    float: left;
+  }
+
+  input {
+    width: $input-size-width;
+    height: $input-border-size + $input-size-height - 1;
+
+    text-align: right;
+  }
+}
+
+.input-quantity-buttons {
+  margin-left: $input-border-size;
+}
+
+.input-quantity-button {
+  padding: 0;
+  cursor: pointer;
+  color: $color-white;
+  width: $input-size-height-half;
+  height: $input-size-height-half;
+  line-height: $input-size-height-half;
+  margin-bottom: $input-border-size - 1;
+  font-size: 0.5em;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  background-color: $color-grey;
+  border: none;
+  display: block;
+}

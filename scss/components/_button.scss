@@ -1,0 +1,27 @@
+.btn {
+  @include box-shadow(2px 2px 2px 2px rgba($color-black, 0.4));
+  @include border-radius($border-radius);
+  @include transition($buttons-transition-hover);
+
+  background-color: $color-blue;
+  border: 0 none;
+  color: $color-white;
+  padding: 0.4em 0.3em;
+  cursor: pointer;
+  text-transform: capitalize;
+
+  &.btn-big {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+
+  &:hover {
+    @include opacity($buttons-opacity);
+  }
+
+  &[disabled] {
+    background-color: $color-grey;
+    color: $color-black;
+    cursor: not-allowed;
+  }
+}
